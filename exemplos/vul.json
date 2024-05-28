@@ -1,0 +1,18 @@
+{
+  "base_url": "http://127.0.0.1:8000/",
+  "endpoints": [
+    {
+      "path": "template",
+      "method": "POST",
+      "argument_type": "template",
+      "template_filename": "testing/template.json",
+      "expected_response_for_valid": [
+        "200"
+      ],
+      "expected_response_for_invalid": [
+        "400"
+      ],
+      "n_inputs": 3000
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "customerID-FUZZABLE": "STR 0 10 /default",
+  "customerName-FUZZABLE": "STR 0 10 /default",
+  "customerAge": "10",
+  "dict-FUZZABLE": {
+    "id-FUZZABLE": "STR 0 10 abcdefgh",
+    "name-FUZZABLE": "STR 0 10 abcdefgh",
+    "dictInsideDict-FUZZABLE": {
+      "id-FUZZABLE": "STR 0 10 /default"
+    },
+    "age": 10,
+    "times": 10
+  },
+  "anotherDict-FUZZABLE": {
+    "anotherName-FUZZABLE": "STR 0 10 /default",
+    "fixedData": 10
+  },
+  "items-FUZZABLE": [
+    {
+      "productID-FUZZABLE": "STR 1 10 abc",
+      "quantity": 2
+    },
+    {
+      "productID-FUZZABLE": "STR 1 10 abc",
+      "quantity": 2
+    }
+  ],
+  "shippingAddress": {
+    "street": "123 Main St",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62704"
+  },
+  "paymentMethod": {
+    "type": "credit card",
+    "cardNumber": "4111111111111111",
+    "expirationDate": "12/25",
+    "cvv": "123"
+  }
+}

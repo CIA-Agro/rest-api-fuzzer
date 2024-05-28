@@ -1,0 +1,18 @@
+{
+  "base_url": "http://127.0.0.1:8081/",
+  "endpoints": [
+    {
+      "path": "tokens",
+      "method": "POST",
+      "argument_type": "template",
+      "template_filename": "test_files/vapi_template.json",
+      "expected_response_for_valid": [
+        "200"
+      ],
+      "expected_response_for_invalid": [
+        "200"
+      ],
+      "n_inputs": 10
+    }
+  ]
+}

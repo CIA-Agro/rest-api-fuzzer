@@ -1,0 +1,48 @@
+{
+  "base_url": "http://127.0.0.1:8000/",
+  "endpoints": [
+    {
+      "path": "vulString",
+      "method": "GET",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 30000,
+      "arguments": [
+        {
+          "name": "string",
+          "type": "string",
+          "alphabet": "abcde123",
+          "max_acceptable_size": 10,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "string2",
+          "type": "string",
+          "alphabet": "/default",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "int",
+          "type": "int",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "float",
+          "type": "float",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0,
+          "precision": 2
+        }
+      ]
+    }
+  ]
+}

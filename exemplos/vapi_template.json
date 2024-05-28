@@ -1,0 +1,8 @@
+{
+  "auth-FUZZABLE": {
+    "passwordCredentials-FUZZABLE": {
+      "username-FUZZABLE": "STR 0 100 /malformed",
+      "password-FUZZABLE": "STR 0 100 /malformed"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "base_url": "http://127.0.0.1:8000/api/v1/",
+  "custom_header": {
+    "API-Key": "chave"
+  },
+  "endpoints": [
+    {
+      "path": "algoritmo",
+      "method": "POST",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400"
+      ],
+      "n_inputs": 100,
+      "arguments": [
+        {
+          "name": "name",
+          "type": "string",
+          "max_acceptable_size": 36,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "max_acceptable_size": 8,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "library",
+          "type": "string",
+          "max_acceptable_size": 36,
+          "min_acceptable_size": 0
+        }
+      ]
+    }
+  ]
+}

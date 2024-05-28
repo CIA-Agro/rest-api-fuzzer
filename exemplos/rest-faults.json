@@ -1,0 +1,19 @@
+{
+  "base_url": "http://127.0.0.1:8080/api",
+  "endpoints": [
+    {
+      "path": "x",
+      "method": "GET",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200"
+      ],
+      "expected_response_for_invalid": [
+      ],
+      "n_inputs": 10,
+      "arguments": [
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,171 @@
+{
+  "base_url": "http://127.0.0.1:8000/",
+  "endpoints": [
+    {
+      "path": "vul",
+      "method": "GET",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 3000,
+      "arguments": [
+        {
+          "name": "num",
+          "type": "int",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "num2",
+          "type": "int",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "num3",
+          "type": "int",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        }
+      ]
+    },
+    {
+      "path": "vulFloat",
+      "method": "GET",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 3000,
+      "arguments": [
+        {
+          "name": "num",
+          "type": "float",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0,
+          "precision": 2
+        },
+        {
+          "name": "num2",
+          "type": "float",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0,
+          "precision": 2
+        },
+        {
+          "name": "num3",
+          "type": "float",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0,
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "path": "vulString",
+      "method": "GET",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 3000,
+      "arguments": [
+        {
+          "name": "string",
+          "type": "string",
+          "alphabet": "abcde123",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        }
+      ]
+    },
+    {
+      "path": "vulString",
+      "method": "POST",
+      "argument_type": "query_parameters",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 3000,
+      "arguments": [
+        {
+          "name": "string",
+          "type": "string",
+          "alphabet": "abcde123",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        }
+      ]
+    },
+    {
+      "path": "vulJson",
+      "method": "POST",
+      "argument_type": "json",
+      "expected_response_for_valid": [
+        "200",
+        "201"
+      ],
+      "expected_response_for_invalid": [
+        "400",
+        "402"
+      ],
+      "n_inputs": 30,
+      "arguments": [
+        {
+          "name": "str1",
+          "type": "string",
+          "alphabet": "abcde123",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "num1",
+          "type": "int",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0
+        },
+        {
+          "name": "num2",
+          "type": "float",
+          "max_acceptable_size": 100,
+          "min_acceptable_size": 0,
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "path": "template",
+      "method": "GET",
+      "argument_type": "template",
+      "template_filename": "template.json",
+      "expected_response_for_valid": [
+        "200"
+      ],
+      "expected_response_for_invalid": [
+        "400"
+      ],
+      "n_inputs": 30
+    }
+  ]
+}
